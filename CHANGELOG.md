@@ -8,3 +8,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   - git
 - Automated testing and continuous integration.
 - Vagrant for creating and provisioning development machine.
+- Automatic deployment to Supermarket on tags.
