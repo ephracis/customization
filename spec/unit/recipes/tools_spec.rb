@@ -1,12 +1,6 @@
-#
-# Cookbook Name:: base
-# Spec:: default
-#
-# Copyright (c) 2016 The Authors, All Rights Reserved.
-
 require 'spec_helper'
 
-describe 'customization::default' do
+describe 'customization::tools' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new
@@ -17,8 +11,10 @@ describe 'customization::default' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'installs git' do
+    it 'installs packages' do
       expect(chef_run).to install_package('git')
+      expect(chef_run).to install_package('htop')
+      expect(chef_run).to install_package('tcpdump')
     end
   end
 end
