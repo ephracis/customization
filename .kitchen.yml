@@ -14,5 +14,5 @@ suites:
   - name: default
     run_list:
       - recipe[users::sysadmins]
-      - recipe[customization::default]
+      - recipe[simplare-base::default]
     attributes:

@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.org/simplare-cookbooks/customization.svg?branch=master)](https://travis-ci.org/simplare-cookbooks/customization)
+[![Build Status](https://travis-ci.org/simplare-cookbooks/simplare-base.svg?branch=master)](https://travis-ci.org/simplare-cookbooks/simplare-base)
 
-# Customization Cookbook
+# Simplare's Base Cookbook
 
-This cookbook contains some nice-to-have tools and custom configurations.
+This cookbook contains some nice-to-have tools and custom configurations and acts
+as a base cookbook for all nodes.
 
 ## Supported Platforms
 
@@ -19,7 +20,7 @@ This cookbook contains some nice-to-have tools and custom configurations.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['customization']['bacon']</tt></td>
+    <td><tt>['simplare-base']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -28,14 +29,14 @@ This cookbook contains some nice-to-have tools and custom configurations.
 
 ## Usage
 
-### customization::default
+### simplare-base::default
 
-Include `customization` in your node's `run_list`:
+Include `simplare-base` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[customization::default]"
+    "recipe[simplare-base::default]"
   ]
 }
 ```

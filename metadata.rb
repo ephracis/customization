@@ -1,4 +1,4 @@
-name             'customization'
+name             'simplare-base'
 maintainer       'Christoffer Reijer'
 maintainer_email 'ephracis at gmail'
 license          'GPLv3'
